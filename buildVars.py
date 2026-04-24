@@ -42,9 +42,9 @@ addon_info = AddonInfo(
 	# Add-on update channel (default is None, denoting stable releases,
 	# and for development releases, use "dev".)
 	# Do not change unless you know what you are doing!
-	addon_updateChannel=None,
+	addon_updateChannel="stable",
 	# Add-on license such as GPL 2
-	addon_license="GPL 3.0",
+	addon_license="GPL v3",
 	# URL for the license document the ad-on is licensed under
 	addon_licenseURL="https://github.com/nidza07/Enhanced-Clipboard-Reading/#GPL-3.0-1-ov-file",
 )
