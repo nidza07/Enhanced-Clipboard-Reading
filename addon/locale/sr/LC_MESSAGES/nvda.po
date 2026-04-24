@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the 'enhanced_clipboard_reading' package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 'enhanced_clipboard_reading' '1.0'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2026-04-24 15:15+0200\n"
+"PO-Revision-Date: 2026-04-24 15:22+0200\n"
+"Last-Translator: Nikola Jović <wwenikola123@gmail.com>\n"
+"Language-Team: \n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#. Translators: The title of the Enhanced Clipboard Reading settings panel.
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
+#: addon\globalPlugins\enhancedClipboardReading.py:20 buildVars.py:21
+msgid "Enhanced Clipboard Reading"
+msgstr "Poboljšano čitanje privremene memorije"
+
+#: addon\globalPlugins\enhancedClipboardReading.py:26
+msgid "&Maximum clipboard length before using browsable message (characters):"
+msgstr ""
+"&Maksimalna dužina privremene memorije pre nego što se koristi poruka režima "
+"pretraživanja (u znakovima):"
+
+#: addon\globalPlugins\enhancedClipboardReading.py:49
+msgid ""
+"Reports the text on the Windows clipboard. Pressing twice spells this "
+"information. Pressing three times displays the clipboard contents in a "
+"browsable window. If the clipboard exceeds the configured character limit, a "
+"browsable window is shown on the first press, and additional presses are "
+"ignored."
+msgstr ""
+"Prijavljuje tekst u Windows privremenoj memoriji. Pritiskanje dva puta sriče "
+"ovu informaciju. Pritiskanje tri puta će prikazati informaciju u poruci "
+"režima pretraživanja. Ako privremena memorija sadrži više teksta od "
+"podešenog ograničenja znakova, poruka režima pretraživanja će biti prikazana "
+"nakon prvog pritiskanja, a dodatna pritiskanja će biti zanemarena."
+
+#. Translators: Presented when there is no text on the clipboard.
+#: addon\globalPlugins\enhancedClipboardReading.py:65
+msgid "There is no text on the clipboard"
+msgstr "Nema teksta u privremenoj memoriji"
+
+#. Translators: Title of the browsable message showing clipboard contents.
+#: addon\globalPlugins\enhancedClipboardReading.py:79
+#: addon\globalPlugins\enhancedClipboardReading.py:87
+msgid "Clipboard contents"
+msgstr "Sadržaj privremene memorije"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
+#: buildVars.py:24
+msgid ""
+"Enhances the default NVDA+C command to read the clipboard with a "
+"configurable character limit instead of the hardcoded value of no more than "
+"1023. If there is more text on the clipboard than the configured limit, "
+"presents the clipboard text in a browseable message for easier reviewing, "
+"instead of saying that the clipboard contains a large portion of text. A "
+"browseable message can also be opened at any time by pressing NVDA+C three "
+"times quickly, even if there is less text on the clipboard than the "
+"configured limit."
+msgstr ""
+"Poboljšava podrazumevanu NVDA komandu NVDA+C za čitanje privremene memorije "
+"ograničenjem znakova koje se može podesiti umesto unapred definisane "
+"vrednosti koja ne može biti veća od 1023. Ako privremena memorija sadrži "
+"više teksta od podešenog ograničenja, prikazuje poruku u režimu "
+"pretraživanja radi lakšeg pregleda, umesto da izgovori da privremena "
+"memorija sadrži velik deo teksta. Poruka režima pretraživanja se takođe može "
+"otvoriti u bilo kom trenutku pritiskanjem NVDA+C brzo tri puta, čak i ako "
+"ima manje teksta u privremenoj memoriji od podešenog ograničenja."
+
+#. Brief changelog for this version
+#. Translators: what's new content for the add-on version to be shown in the add-on store
+#: buildVars.py:29
+msgid "Initial version."
+msgstr "Prva verzija."
