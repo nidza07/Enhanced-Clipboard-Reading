@@ -71,7 +71,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				ui.message(text)
 			elif repeatCount == 1:
 				speech.speakSpelling(text, useCharacterDescriptions=False)
-			else:
+			elif repeatCount == 2:
 				# Triple press: show browsable message
 				ui.browseableMessage(
 					text,

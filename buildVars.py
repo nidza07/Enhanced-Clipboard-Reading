@@ -23,10 +23,10 @@ addon_info = AddonInfo(
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
 	addon_description=_("""Enhances the default NVDA+C command to read the clipboard with a configurable character limit instead of the hardcoded value of no more than 1023. If there is more text on the clipboard than the configured limit, presents the clipboard text in a browseable message for easier reviewing, instead of saying that the clipboard contains a large portion of text. A browseable message can also be opened at any time by pressing NVDA+C three times quickly, even if there is less text on the clipboard than the configured limit."""),
 	# version
-	addon_version="1.0",
+	addon_version="1.1",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""Initial version."""),
+	addon_changelog=_("""- Fixed a bug which made it possible to open multiple browseable messages if repeatedly pressing NVDA+C beyond the third press."""),
 	# Author(s)
 	addon_author="Nikola Jović <wwenikola123@gmail.com>",
 	# URL for the add-on documentation support
@@ -46,7 +46,7 @@ addon_info = AddonInfo(
 	# Add-on license such as GPL 2
 	addon_license="GPL v3",
 	# URL for the license document the ad-on is licensed under
-	addon_licenseURL="https://github.com/nidza07/Enhanced-Clipboard-Reading/#GPL-3.0-1-ov-file",
+	addon_licenseURL="https://github.com/nidza07/Enhanced-Clipboard-Reading/blob/main/LICENSE",
 )
 
 # Define the python files that are the sources of your add-on.
