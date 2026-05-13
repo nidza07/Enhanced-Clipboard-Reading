@@ -8,31 +8,38 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 'enhanced_clipboard_reading' '1.0'\n"
 "Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2026-05-09 23:42+0200\n"
-"PO-Revision-Date: 2026-05-09 23:45+0200\n"
+"POT-Creation-Date: 2026-05-13 21:19+0200\n"
+"PO-Revision-Date: 2026-05-13 21:22+0200\n"
 "Last-Translator: Nikola Jović <wwenikola123@gmail.com>\n"
 "Language-Team: \n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 3.9\n"
+
+#. Translators: Presented when there is no text on the clipboard.
+#: addon\globalPlugins\enhancedClipboardReading.py:14
+msgid "There is no text on the clipboard"
+msgstr "Nema teksta u privremenoj memoriji"
 
 #. Translators: The title of the Enhanced Clipboard Reading settings panel.
 #. Add-on summary/title, usually the user visible name of the add-on
 #. Translators: Summary/title for this add-on
 #. to be shown on installation and add-on information found in add-on store
-#: addon\globalPlugins\enhancedClipboardReading.py:20 buildVars.py:21
+#: addon\globalPlugins\enhancedClipboardReading.py:23 buildVars.py:21
 msgid "Enhanced Clipboard Reading"
 msgstr "Poboljšano čitanje privremene memorije"
 
-#: addon\globalPlugins\enhancedClipboardReading.py:26
+#: addon\globalPlugins\enhancedClipboardReading.py:29
 msgid "&Maximum clipboard length before using browsable message (characters):"
 msgstr ""
 "&Maksimalna dužina privremene memorije pre nego što se koristi poruka režima "
 "pretraživanja (u znakovima):"
 
-#: addon\globalPlugins\enhancedClipboardReading.py:49
+#: addon\globalPlugins\enhancedClipboardReading.py:52
 msgid ""
 "Reports the text on the Windows clipboard. Pressing twice spells this "
 "information. Pressing three times displays the clipboard contents in a "
@@ -46,16 +53,31 @@ msgstr ""
 "podešenog ograničenja znakova, poruka režima pretraživanja će biti prikazana "
 "nakon prvog pritiskanja, a dodatna pritiskanja će biti zanemarena."
 
-#. Translators: Presented when there is no text on the clipboard.
-#: addon\globalPlugins\enhancedClipboardReading.py:65
-msgid "There is no text on the clipboard"
-msgstr "Nema teksta u privremenoj memoriji"
+#: addon\globalPlugins\enhancedClipboardReading.py:83
+#: addon\globalPlugins\enhancedClipboardReading.py:96
+#, python-format
+#| msgid "Clipboard contents ({count} character)"
+#| msgid_plural "Clipboard contents ({count} characters)"
+msgid "Clipboard contents (%s character)"
+msgid_plural "Clipboard contents (%s characters)"
+msgstr[0] "Sadržaj privremene memorije (%s znak)"
+msgstr[1] "Sadržaj privremene memorije (%s znaka)"
+msgstr[2] "Sadržaj privremene memorije (%s znakova)"
 
-#. Translators: Title of the browsable message showing clipboard contents.
-#: addon\globalPlugins\enhancedClipboardReading.py:79
-#: addon\globalPlugins\enhancedClipboardReading.py:87
-msgid "Clipboard contents"
-msgstr "Sadržaj privremene memorije"
+#. Translators: Input help mode message for the clipboard character count command.
+#: addon\globalPlugins\enhancedClipboardReading.py:104
+msgid "Reports the number of characters on the Windows clipboard."
+msgstr "Prijavljuje broj znakova u Windows privremenoj memoriji."
+
+#: addon\globalPlugins\enhancedClipboardReading.py:121
+#, python-format
+#| msgid "{count} character on the clipboard"
+#| msgid_plural "{count} characters on the clipboard"
+msgid "%s character on the clipboard"
+msgid_plural "%s characters on the clipboard"
+msgstr[0] "%s znak u privremenoj memoriji"
+msgstr[1] "%s znaka u privremenoj memoriji"
+msgstr[2] "%s znakova u privremenoj memoriji"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-on store
@@ -68,7 +90,9 @@ msgid ""
 "instead of saying that the clipboard contains a large portion of text. A "
 "browseable message can also be opened at any time by pressing NVDA+C three "
 "times quickly, even if there is less text on the clipboard than the "
-"configured limit."
+"configured limit.\n"
+"Pressing NVDA+Y will announce the number of characters on the clipboard, "
+"which will also be shown in the title of the browseable messages."
 msgstr ""
 "Poboljšava podrazumevanu NVDA komandu NVDA+C za čitanje privremene memorije "
 "ograničenjem znakova koje se može podesiti umesto unapred definisane "
@@ -77,17 +101,30 @@ msgstr ""
 "pretraživanja radi lakšeg pregleda, umesto da izgovori da privremena "
 "memorija sadrži velik deo teksta. Poruka režima pretraživanja se takođe može "
 "otvoriti u bilo kom trenutku pritiskanjem NVDA+C brzo tri puta, čak i ako "
-"ima manje teksta u privremenoj memoriji od podešenog ograničenja."
+"ima manje teksta u privremenoj memoriji od podešenog ograničenja.\n"
+"Pritiskanje NVDA+Y će izgovoriti broj znakova u privremenoj memoji, što će "
+"takođe biti prikazano u naslovima poruka režima pretraživanja."
 
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
-#: buildVars.py:29
+#: buildVars.py:30
 msgid ""
-"- Fixed a bug which made it possible to open multiple browseable messages if "
-"repeatedly pressing NVDA+C beyond the third press."
+"- Added a new script bound to NVDA+Y by default which announces the number "
+"of characters on the clipboard.\n"
+"- The titles of the browseable messages with the contents of the clipboard "
+"now also display the number of characters"
 msgstr ""
-"- Ispravljena greška koja je dozvoljavala da otvorite više poruka režima "
-"pretraživanja ako se više puta pritiska NVDA+C nakon trećeg pritiskanja."
+"- Dodata nova skripta sa podrazumevanom dodeljenom prečicom NVDA+Y koja "
+"izgovara broj znakova u privremenoj memoriji.\n"
+"- Naslovi poruka režima pretraživanja sa sadržajem privremene memorije "
+"takođe prikazuju broj znakova"
+
+#~ msgid ""
+#~ "- Fixed a bug which made it possible to open multiple browseable messages "
+#~ "if repeatedly pressing NVDA+C beyond the third press."
+#~ msgstr ""
+#~ "- Ispravljena greška koja je dozvoljavala da otvorite više poruka režima "
+#~ "pretraživanja ako se više puta pritiska NVDA+C nakon trećeg pritiskanja."
 
 #~ msgid "Initial version."
 #~ msgstr "Prva verzija."

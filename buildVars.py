@@ -21,12 +21,14 @@ addon_info = AddonInfo(
 	addon_summary=_("Enhanced Clipboard Reading"),
 	# Add-on description
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
-	addon_description=_("""Enhances the default NVDA+C command to read the clipboard with a configurable character limit instead of the hardcoded value of no more than 1023. If there is more text on the clipboard than the configured limit, presents the clipboard text in a browseable message for easier reviewing, instead of saying that the clipboard contains a large portion of text. A browseable message can also be opened at any time by pressing NVDA+C three times quickly, even if there is less text on the clipboard than the configured limit."""),
+	addon_description=_("""Enhances the default NVDA+C command to read the clipboard with a configurable character limit instead of the hardcoded value of no more than 1023. If there is more text on the clipboard than the configured limit, presents the clipboard text in a browseable message for easier reviewing, instead of saying that the clipboard contains a large portion of text. A browseable message can also be opened at any time by pressing NVDA+C three times quickly, even if there is less text on the clipboard than the configured limit.
+Pressing NVDA+Y will announce the number of characters on the clipboard, which will also be shown in the title of the browseable messages."""),
 	# version
-	addon_version="2.0",
+	addon_version="3.0",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""- Fixed a bug which made it possible to open multiple browseable messages if repeatedly pressing NVDA+C beyond the third press."""),
+	addon_changelog=_("""- Added a new script bound to NVDA+Y by default which announces the number of characters on the clipboard.
+- The titles of the browseable messages with the contents of the clipboard now also display the number of characters"""),
 	# Author(s)
 	addon_author="Nikola Jović <wwenikola123@gmail.com>",
 	# URL for the add-on documentation support
